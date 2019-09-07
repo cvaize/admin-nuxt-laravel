@@ -1,0 +1,8 @@
+//В макете font-size html = 18 px, но переменную не использую, чтобы иметь возможность
+// изменив font-size html, эта функция не изменила отдоваемые значения, и тем самым значение rem изменится по всему сайту
+@function rem($px) {
+  @return #{($px/16)}rem;
+}
+@function lh($line-height-px, $font-size-px) {
+  @return ($line-height-px/$font-size-px);
+}
